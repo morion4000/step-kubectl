@@ -1,5 +1,5 @@
 name: kubectl
-version: 0.0.1
+version: 0.0.2
 description: Step for deployment to kubernetes
 keywords:
   - kubectl
