@@ -1,7 +1,17 @@
 name: kubectl
-version: 0.0.2
+version: 0.0.3
 description: Step for deployment to kubernetes
 keywords:
   - kubectl
   - kubernetes
+properties:
+  server:
+    type: string
+    required: true
+  token:
+    type: string
+    required: true
+  command:
+    type: string
+    required: true
   
