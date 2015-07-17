@@ -1,2 +1,7 @@
 name: kubectl
 version: 0.0.1
+description: Step for deployment to kubernetes
+keywords:
+  - kubectl
+  - kubernetes
+  
