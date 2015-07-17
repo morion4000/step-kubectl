@@ -21,4 +21,4 @@ ls
 
 chmod +x kubectl
 
-kubectl "$kubectl_command --server=$WERCKER_KUBECTL_SERVER --token=$WERCKER_KUBECTL_SERVER --insecure-skip-tls-verify=$insecure_verify"
+./kubectl "$kubectl_command --server=$WERCKER_KUBECTL_SERVER --token=$WERCKER_KUBECTL_SERVER --insecure-skip-tls-verify=$insecure_verify"
