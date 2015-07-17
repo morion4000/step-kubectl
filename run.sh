@@ -11,7 +11,10 @@ if [ -n "$WERCKER_KUBECTL_IMAGE" ] ; then
   kubectl_command="$kubectl_command --image=$WERCKER_KUBECTL_IMAGE"
 fi
 
-cd $WERCKER_STEP_ROOT
+pwd
+ll
+
+#cd $WERCKER_STEP_ROOT
 
 chmod +x kubectl
 
