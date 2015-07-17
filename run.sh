@@ -11,15 +11,6 @@ if [ -n "$WERCKER_KUBECTL_IMAGE" ] ; then
   kubectl_command="$kubectl_command --image=$WERCKER_KUBECTL_IMAGE"
 fi
 
-pwd
-ls
+chmod +x $WERCKER_STEP_ROOT/kubectl
 
-cd $WERCKER_STEP_ROOT
-
-
-pwd
-ls
-
-chmod +x kubectl
-
-./kubectl $kubectl_command --server=$WERCKER_KUBECTL_SERVER --token=$WERCKER_KUBECTL_TOKEN --insecure-skip-tls-verify=$insecure_verify
+$WERCKER_STEP_ROOT/kubectl $kubectl_command --server=$WERCKER_KUBECTL_SERVER --token=$WERCKER_KUBECTL_TOKEN --insecure-skip-tls-verify=$insecure_verify
