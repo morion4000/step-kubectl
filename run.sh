@@ -12,9 +12,13 @@ if [ -n "$WERCKER_KUBECTL_IMAGE" ] ; then
 fi
 
 pwd
-ll
+ls
 
-#cd $WERCKER_STEP_ROOT
+cd $WERCKER_STEP_ROOT
+
+
+pwd
+ls
 
 chmod +x kubectl
 
